@@ -161,7 +161,7 @@ h2{
 .presentation-image img{
     border-radius: 10px;
     box-shadow: #666 1px 2px 5px;
-    max-width: 40%;
+    max-width: 45%;
     max-height: auto;
     transition:  0.5s;
 }
@@ -257,6 +257,9 @@ img.img_main{
     }
     .projets-section{
         margin-top: 15%;
+    }
+    .presentation-image img{
+        max-width: 60%;
     }
     .page-content .projets-section h1{
         font-size: 1.5em;
