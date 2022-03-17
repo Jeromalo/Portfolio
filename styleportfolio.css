@@ -9,7 +9,6 @@ body{
 /* header */
 nav{
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
@@ -81,13 +80,14 @@ h1{
     cursor: default;
 }
 .firstname{
-    size: 50px;
+    font-size: 7em;
     color: rgb(0, 0, 0);
     text-shadow: 5px 2px 2px #36424e;
     font-family: 'Fredericka the Great', cursive;
 
 }
 .lastname{
+    font-size: 7em;
     color: rgb(0, 0, 0);
     text-shadow: 5px 2px 2px #36424e;
     font-family: 'Fredericka the Great', cursive;
@@ -233,12 +233,27 @@ img.img_main{
 }
 
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 750px){
     nav{
         justify-content: center;
     }
     nav ul{
         display: none;
+    }
+    .module-title span{
+        font-size: 80px;
+    }
+    .firstname{
+        font-size: 5em;
+    }
+    .lastname{
+        font-size: 5em;
+    }
+    .lead{
+        font-size: 15px;
+    }
+    .signature{
+        font-size: 20px;
     }
     .projets-section{
         margin-top: 15%;
@@ -256,5 +271,44 @@ img.img_main{
     }
     footer .colonne{
         width: 80%;
+    }
+    nav{
+        height: 80px;
+    }
+}
+.footer h3{
+    font-size: 18px;
+    margin-bottom: -1px;
+}
+.colonne p{
+    font-size: 15px;
+    margin-bottom: 5px;
+    }
+.footer{
+    display: center;
+    }
+
+
+@media screen and (max-width: 500px){
+    .module-title span{
+        font-size: 60px;
+    }
+    .firstname{
+        font-size: 4em;
+    }
+    .lastname{
+        font-size: 4em;
+    }
+    .footer h3{
+        font-size: 15px;
+        margin-bottom: -1px;
+    }
+    .colonne p{
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+    .footer{
+        display:block;
+        
     }
 }
